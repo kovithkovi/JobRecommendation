@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Uploader</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <div class="main">
+        <p class="">Land Your Dream Job Faster: Upload Your <br>
+            Resume & Get Matched Instantly!</p>
+    </div>
+    <div class="submain">
+        <p>Stop wasting time filling out endless applications. Upload your resume and our powerful <br> matching engine
+            will connect you with jobs that fit your skills and experience.</p>
+    </div>
+    <div class="upload">
+        <p>Upload Your Resume Now!</p>
+    </div>
+    <div class="btn">
+        <form action="/upload">
+            <button> <i class="fab fa-telegram-plane"></i>Upload the file here</button>
+        </form>
+    </div>
+
+    <div class="container">
+        <div class="card">
+            <div class="card1">
+                {%load static%}
+                <img src="{% static 'microsoft.jpg' %}" alt="Image 1">
+                <div class="card-body">
+                    <h5 class="card-title">Senior Product Manager</h5>
+                    <div class="additional">
+                        <p>100% Remote work</p>
+                        <p>Full Time</p>
+                    </div>
+                    <div class="additional">
+                        <p>117,200 - 250,200 USD Annually</p>
+                    </div>
+                    <div class="location">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Bangalore</span>
+                    </div>
+                    <p class="card-text">Engage with customers to understand data management challenges and define
+                        product strategy. Drive business impact through market research and competitive analysis. Define
+                        feature sets and collaborate with teams to improve product development.</p>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card2">
+                {%load static%}
+                <img src="{% static 'microsoft.jpg' %}" alt="Image 1">
+                <div class="card-body">
+                    <h5 class="card-title">Senior Product Manager</h5>
+                    <div class="additional">
+                        <p>100% Remote work</p>
+                        <p>Full Time</p>
+                    </div>
+                    <div class="additional">
+                        <p>117,200 - 250,200 USD Annually</p>
+                    </div>
+                    <div class="location">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Bangalore</span>
+                    </div>
+                    <p class="card-text">Engage with customers to understand data management challenges and define
+                        product strategy. Drive business impact through market research and competitive analysis. Define
+                        feature sets and collaborate with teams to improve product development.</p>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card3">
+                {%load static%}
+                <img src="{% static 'microsoft.jpg' %}" alt="Image 1">
+                <div class="card-body">
+                    <h5 class="card-title">Senior Product Manager</h5>
+                    <div class="additional">
+                        <p>100% Remote work</p>
+                        <p>Full Time</p>
+                    </div>
+                    <div class="additional">
+                        <p>117,200 - 250,200 USD Annually</p>
+                    </div>
+                    <div class="location">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Bangalore</span>
+                    </div>
+                    <p class="card-text">Engage with customers to understand data management challenges and define
+                        product strategy. Drive business impact through market research and competitive analysis. Define
+                        feature sets and collaborate with teams to improve product development.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- <div class="container">
+        <h1>Upload Your Resume</h1>
+        <form method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            <label for="resume" class="custom-file-upload">
+                Choose File
+            </label>
+            <input type="file" name="resume" id="resume" accept=".doc, .docx, .pdf" required>
+            <span id="file-name"></span>
+            <button type="submit">Upload</button>
+        </form>
+        {% if extracted_text %}
+        <h2>Extracted Text</h2>
+        <pre>{{ extracted_text }}</pre>
+        {% endif %}
+        {% if jobs %}
+        <h2>Job Listings</h2>
+        <ul class="job-list">
+            {% for job in jobs %}
+            <li>
+                <h3>{{ job.title }}</h3>
+            </li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+    </div>
+    <script>
+        document.getElementById('resume').addEventListener('change', function () {
+            var fileName = this.files[0].name;
+            document.getElementById('file-name').textContent = fileName;
+        });
+    </script> -->
+</body>
+
+</html>

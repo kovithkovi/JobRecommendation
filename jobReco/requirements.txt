@@ -1,0 +1,8 @@
+docx2txt
+numpy
+pandas
+PyPDF2
+scikit-learn
+scipy
+seaborn
+django
