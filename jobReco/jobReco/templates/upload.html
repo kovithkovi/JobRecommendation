@@ -124,6 +124,15 @@
             font-weight: bold;
             padding-left: 40px;
         }
+
+        .button {
+            padding: 10px 25px;
+            border-radius: 10px;
+            background-color: #8B81FF;
+            font-weight: 200;
+            font-family: 'Abril Fatface', cursive;
+            font-size: large;
+        }
     </style>
 </head>
 
@@ -138,6 +147,7 @@
                     {% endfor %}
                 </ul>
             </div>
+            <button id="redirectButton" class="button">Back</button>
         </div>
     </div>
     <script>
@@ -151,6 +161,9 @@
                 const color = firstCategory.getAttribute('data-color');
                 container.style.backgroundColor = color;
             }
+        });
+        document.getElementById('redirectButton').addEventListener('click', function () {
+            window.location.href = '/';
         });
     </script>
 </body>
